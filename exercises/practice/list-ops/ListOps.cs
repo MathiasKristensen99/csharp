@@ -6,12 +6,13 @@ public static class ListOps
 {
     public static int Length<T>(List<T> input)
     {
-        throw new NotImplementedException("You need to implement this function.");
+        return input.Count;
     }
 
     public static List<T> Reverse<T>(List<T> input)
     {
-        throw new NotImplementedException("You need to implement this function.");
+        input.Reverse(0, input.Count);
+        return input;
     }
 
     public static List<TOut> Map<TIn, TOut>(List<TIn> input, Func<TIn, TOut> map)
